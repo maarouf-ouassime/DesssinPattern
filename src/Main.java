@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Dessin dessin = new Dessin(1);
+        dessin.addFigure(new Cercle());
+        dessin.addFigure(new Rectangle());
+
+        dessin.dessiner();
     }
 }
