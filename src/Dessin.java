@@ -1,4 +1,6 @@
-public class Dessin implements TraitementStrategy {
+public class Dessin{
+
+    private TraitementStrategy traitementStrategy;
 
     private Figure[] figures;
     private int nbFigures;
@@ -29,8 +31,4 @@ public class Dessin implements TraitementStrategy {
 
     }
 
-    @Override
-    public void traiter(Figure f) {
-
-    }
 }

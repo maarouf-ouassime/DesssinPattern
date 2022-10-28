@@ -1,23 +1,26 @@
-public class Cercle extends Figure {
-    private double rayon;
-    private Point centre;
 
-    public Cercle(double rayon, Point centre) {
-        this.rayon = rayon;
-        this.centre = centre;
-    }
+
+
+public class Cercle extends Figure{
+    private Point centre;
+    private double rayon;
+
     @Override
-    public double perimettre() {
-        return 0;
+    public double perimetre() {
+        return 2*Math.PI*rayon;
     }
 
     @Override
     public double surface() {
-        return 0;
+        return Math.PI*rayon*rayon;
     }
 
     @Override
     public void dessiner() {
+    }
+
+    @Override
+    public void update(Observer observer) {
 
     }
 }

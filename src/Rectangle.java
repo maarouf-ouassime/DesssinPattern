@@ -1,21 +1,27 @@
-public class Rectangle extends Figure{
 
-    private double longueur;
-    private double hauteur;
+
+
+public class Rectangle extends Figure{
     private Point csg;
+    private double l;
+    private double h;
 
     @Override
-    public double perimettre() {
-        return 0;
+    public double perimetre() {
+        return 2*(l+h);
     }
 
     @Override
     public double surface() {
-        return 0;
+        return l*h;
     }
 
     @Override
     public void dessiner() {
+    }
+
+    @Override
+    public void update(Observer observer) {
 
     }
 }

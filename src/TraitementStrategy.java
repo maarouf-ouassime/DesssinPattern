@@ -1,4 +1,4 @@
 public interface TraitementStrategy {
 
-    void traiter(Figure f);
+    void traiter();
 }
